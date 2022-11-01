@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,37 +15,19 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/quiz.css">
   <script src="js/quiz.js"></script>
-  <script>var btn = document.getElementById("next");
-    btn.addEventListener("click", function () {
-      this.classList.add("nextnew");
-    });</script>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="HandheldFriendly" content="true" />
-
-
-  <!-- swiper css link  -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-  <!-- font awesome cdn link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-  <!-- custom css file link  -->
-
   <link rel="stylesheet" type="text/css" href=css/app.css">
-
-
 </head>
-
 <body>
   <header class="header">
-
     <section class="flex">
-
       <a href="index.html" class="logo">Опросник академической <br> компетентности</a>
-
       <nav class="navbar">
         <a href="index.html">Домой</a>
         <a href="#about">Об опроснике</a>
@@ -54,13 +35,8 @@
         <a href="#reviews">Отзывы</a>
         <a href="#contact">Связаться с нами</a>
       </nav>
-
-
-
       <div id="menu-btn" class="fas fa-bars"></div>
-
     </section>
-
   </header>
   <div class="backk">
     <div id="mainText" class="mainText">
@@ -75,7 +51,6 @@
           в вузе, нажмите на кнопку "Верно". Если утверждение имеет слабое или отдаленное отношение к вашему опыту
           учебной деятельности, то нажмите на кнопку "Неверно".</p>
       </div>
-
       <div class="multipleChoiceQues">
         <div class="my-progress">
           <progress class="my-progress-bar" min="0" max="100" value="0" step="9"
@@ -224,20 +199,8 @@
           </table>
           <button class="backBtn">Назад</button>
         </div>
-
       </div>
-
-
-
-
-
-      <script>
-        function switchTheme() {
-          document.getElementById("abc").href = 'css/style.css';
-        }
-      </script>
       <script type="text/javascript" src="js/app.js"></script>
       <script type="text/javascript" src="js/hide.js"></script>
 </body>
-
 </html>
