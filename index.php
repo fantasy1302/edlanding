@@ -6,15 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Опросник АК</title>
    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-
-   <!-- swiper css link  -->
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-   <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-   <!-- custom css file link  -->
    <link rel="stylesheet" id="abc" href="css/day.css">
 
 </head>
@@ -248,10 +241,6 @@
 
 </section>
 
-<!-- teachers section ends -->
-
-<!-- reviews section starts  -->
-
 <section class="reviews" id="reviews">
 
    <h1 class="heading"> Отзывы<span>  студентов</span></h1>
@@ -327,7 +316,6 @@
                </div>
             </div>
          </div>
-
          <div class="swiper-slide slide">
             <p>Здесь пока еще нет отзывов о нашем курсе,  но скоро они обязательно появятся</p>
             <div class="user">
@@ -344,7 +332,6 @@
                </div>
             </div>
          </div>
-
          <div class="swiper-slide slide">
             <p>Здесь пока еще нет отзывов о нашем курсе,  но скоро они обязательно появятся</p>
             <div class="user">
@@ -361,38 +348,26 @@
                </div>
             </div>
          </div>
-
       </div>
-
       <div class="swiper-pagination"></div>
-
    </div>
-
 </section>
   <?php
-    $host = 'localhost';  // Хост, у нас все локально
-    $user = 'j79705989';    // Имя созданного вами пользователя
-    $pass = 'St773nkumi*'; // Установленный вами пароль пользователю
-    $db_name = 'j79705989_dbtest';   // Имя базы данных
-    $link = mysqli_connect($host, $user, $pass, $db_name); // Соединяемся с базой
-
-    // Ругаемся, если соединение установить не удалось
+    $host = 'localhost';  
+    $user = 'j79705989';    
+    $pass = 'St773nkumi*'; 
+    $db_name = 'j79705989_dbtest';   
+    $link = mysqli_connect($host, $user, $pass, $db_name); 
     if (!$link) {
       echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
       exit;
     }
-
-    //Если переменная Name передана
     if (isset($_POST["Name"])) {
-      //Если это запрос на обновление, то обновляем
       if (isset($_GET['red'])) {
         $sql = mysqli_query($link, "UPDATE `products` SET `Name` = '{$_POST['Name']}',`Price` = '{$_POST['Price']}' WHERE `ID`={$_GET['red']}");
       } else {
-        //Иначе вставляем данные, подставляя их в запрос
       }
     }
-
-    //Удаляем, если что
     if (isset($_GET['del'])) {
       $sql = mysqli_query($link, "DELETE FROM `products` WHERE `ID` = {$_GET['del']}");
       if ($sql) {   
@@ -401,8 +376,6 @@
         echo '<p>Произошла ошибка: ' . mysqli_error($link) . '</p>';
       }
     }
-
-    //Если передана переменная red, то надо обновлять данные. Для начала достанем их из БД
     if (isset($_GET['red'])) {
       $sql = mysqli_query($link, "SELECT `ID`, `Name`, `Price` FROM `products` WHERE `ID`={$_GET['red']}");
       $product = mysqli_fetch_array($sql);
@@ -490,41 +463,15 @@
    </div>
 
 </section>
-
-<!-- contact section ends -->
-
-<!-- footer section starts  -->
-
 <footer class="footer">
-
    <section>
-
       <div class="share">
-       
       </div>
-
       <div class="credit">&copy;  Морозов А.И. <span>2022</span></div>
-
    </section>
-
 </footer>
-
-<!-- footer section ends -->
-
-
-
-<!-- swiper js link  -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
 <script src="js/script.js"></script>
-<script>
-     function switchTheme () {
-         
-      document.getElementById("abc").href = 'css/style.css';
-     }
-</script>
 </body>
- 
 </body>
 </html>
