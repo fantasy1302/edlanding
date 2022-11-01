@@ -9,15 +9,11 @@
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="stylesheet" id="abc" href="css/day.css">
-
 </head>
 <body>
 <header class="header">
-
 <section class="flex">
-
    <a href="#home" class="logo">Опросник академической <br> компетентности</a>
-
    <nav class="navbar">
       <a href="#home">Домой</a>
       <a href="#about">Об опроснике</a>
@@ -25,18 +21,11 @@
       <a href="#reviews">Отзывы</a>
       <a href="#contact">Поддержка</a>
    </nav>
-   
- 
-   
    <div id="menu-btn" class="fas fa-bars"></div>
-
 </section>
-
 </header>
 <section class="home" id="home">
-
    <div class="row">
-
       <div class="content">
          <h3>Пройти <span>тест</span></h3>
          <a href="acquestionnaire.html" class="btn">Начать</a>
@@ -83,90 +72,62 @@
             <p>поддержка</p>
          </div>
       </div>
-
    </div>
    </section>
    <section class="about" id="about">
-
    <div class="row">
-
       <div class="image">
          <img src="images/about-img.svg" alt="">
       </div>
-
       <div class="content">
          <h3>Как с нами связаться?</h3>
          <p>Если у Вас возникла проблема  в обучении или какой-то вопрос, то Вы можете обратиться к нам</p>
          <a href="#contact" class="btn">Написать нам</a>
       </div>
-
    </div>
-
 </section>
 <section class="courses" id="courses">
-
    <h1 class="heading">Наш <span><a href="https://accourse.ru/">курс</a></span></h1>
-
    <div class="swiper course-slider">
-
       <div class="swiper-wrapper">
-
          <div class="swiper-slide slide">
             <h3>Мотивация</h3>
             <img src="images/course-1.svg" alt="">
             <p>Познакомимся со способами решения типичных проблем в сфере мотивации</p>
          </div>
-
          <div class="swiper-slide slide">
             <h3>Самоорганизация</h3>
             <img src="images/course-2.svg" alt="">
             <p>Научимся организовывать свое время и пространство, чтобы учиться лучше</p>
          </div>
-
          <div class="swiper-slide slide">
             <h3>Работа с информацией</h3>
             <img src="images/course-3.svg" alt="">
             <p>Узнаем как найти и проверить информацию, полезную в учебе</p>
          </div>
-
          <div class="swiper-slide slide">
             <h3>Саморегуляция эмоций</h3>
             <img src="images/course-4.svg" alt="">
             <p>Научимся приемам совладания со стрессовыми ситуациями</p>
          </div>
-
          <div class="swiper-slide slide">
             <h3>Общение</h3>
             <img src="images/course-5.svg" alt="">
             <p>Улучшим навыки общения</p>
          </div>
-
          <div class="swiper-slide slide">
             <h3>Писмьенная речь</h3>
             <img src="images/course-6.svg" alt="">
             <p>Рассмотрим основы работы с академическими текстами</p>
          </div>
-
       </div>
-
       <div class="swiper-pagination"></div>
-
    </div>
-
 </section>
-
-<!-- courses section ends -->
-
-<!-- teachers section starts  -->
-
 <section class="teachers" id="teachers">
-
    <h1 class="heading" style="display: none;">Наши <span>преподаватели</span></h1>
-
    <div class="swiper teachers-slider">
-
       <div class="swiper-wrapper" style="display: none;"">
-
          <div class="swiper-slide slide">
             <img src="images/tutor-1.png" alt="">
             <div class="share">
@@ -177,7 +138,6 @@
             </div>
             <h3>john deo</h3>
          </div>
-         
          <div class="swiper-slide slide">
             <img src="images/tutor-2.png" alt="">
             <div class="share">
@@ -188,7 +148,6 @@
             </div>
             <h3>john deo</h3>
          </div>
-
          <div class="swiper-slide slide">
             <img src="images/tutor-3.png" alt="">
             <div class="share">
@@ -199,7 +158,6 @@
             </div>
             <h3>john deo</h3>
          </div>
-
          <div class="swiper-slide slide">
             <img src="images/tutor-4.png" alt="">
             <div class="share">
@@ -210,7 +168,6 @@
             </div>
             <h3>john deo</h3>
          </div>
-
          <div class="swiper-slide slide">
             <img src="images/tutor-5.png" alt="">
             <div class="share">
@@ -221,7 +178,6 @@
             </div>
             <h3>john deo</h3>
          </div>
-
          <div class="swiper-slide slide">
             <img src="images/tutor-6.png" alt="">
             <div class="share">
@@ -232,23 +188,14 @@
             </div>
             <h3>john deo</h3>
          </div>
-
       </div>
-
       <div class="swiper-pagination"></div>
-
    </div>
-
 </section>
-
 <section class="reviews" id="reviews">
-
    <h1 class="heading"> Отзывы<span>  студентов</span></h1>
-
    <div class="swiper reviews-slider">
-
       <div class="swiper-wrapper">
-
          <div class="swiper-slide slide">
             <p>Здесь пока еще нет отзывов о нашем курсе,  но скоро они обязательно появятся</p>
             <div class="user">
