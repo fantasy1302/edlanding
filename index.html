@@ -299,36 +299,6 @@
       <div class="swiper-pagination"></div>
    </div>
 </section>
-  <?php
-    $host = 'localhost';  
-    $user = 'j79705989';    
-    $pass = 'St773nkumi*'; 
-    $db_name = 'j79705989_dbtest';   
-    $link = mysqli_connect($host, $user, $pass, $db_name); 
-    if (!$link) {
-      echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
-      exit;
-    }
-    if (isset($_POST["Name"])) {
-      if (isset($_GET['red'])) {
-        $sql = mysqli_query($link, "UPDATE `products` SET `Name` = '{$_POST['Name']}',`Price` = '{$_POST['Price']}' WHERE `ID`={$_GET['red']}");
-      } else {
-      }
-    }
-    if (isset($_GET['del'])) {
-      $sql = mysqli_query($link, "DELETE FROM `products` WHERE `ID` = {$_GET['del']}");
-      if ($sql) {   
-        echo "<p>Товар удален.</p>";
-      } else {
-        echo '<p>Произошла ошибка: ' . mysqli_error($link) . '</p>';
-      }
-    }
-    if (isset($_GET['red'])) {
-      $sql = mysqli_query($link, "SELECT `ID`, `Name`, `Price` FROM `products` WHERE `ID`={$_GET['red']}");
-      $product = mysqli_fetch_array($sql);
-    }
-  ?>
- 
   <section class="contact" id="contact">
 
    <h1 class="heading"><span>Связаться с</span> нами</h1>
@@ -341,11 +311,11 @@
 
       <form action="" method="post">
          <span>Как к Вам можно обращаться?</span>
-         <input type="text" name="Name" value="<?= isset($_GET['red']) ? $product['Name'] : ''; ?>" required placeholder="Введите имя" maxlength="50" name="name" class="box">
+         <input type="text" name="Name" value="" required placeholder="Введите имя" maxlength="50" name="name" class="box">
          <span>Почта</span>
-         <input  type="text" name="Price" size="3" value="<?= isset($_GET['red']) ? $product['Price'] : ''; ?>" required placeholder="Введите электронную почту" maxlength="50" name="email" class="box">
+         <input  type="text" name="Price" size="3" value="" required placeholder="Введите электронную почту" maxlength="50" name="email" class="box">
         <span>Возраст</span>
-         <select  name="age" size="3" value="<?= isset($_GET['red']) ? $product['age'] : ''; ?>" class="box" required>
+         <select  name="age" size="3" value="" class="box" required>
             <option value="" disabled selected>Выберите возрастную группу</option>
             <option value="1">17-18 лет</option>
             <option value="2">19-20 лет</option>
@@ -354,7 +324,7 @@
             <option value="5">25-26 лет</option>
          </select>
                           <span>Курс </span>
-         <select  name="course" size="3" value="<?= isset($_GET['red']) ? $product['course'] : ''; ?>" class="box" required>
+         <select  name="course" size="3" value="" class="box" required>
             <option value="" disabled selected>Выберите курс</option>
             <option value="1">1 курс</option>
             <option value="2">2 курс</option>
@@ -363,7 +333,7 @@
             <option value="5">5 курс</option>
          </select>
          <span>Выберите направленние </span>
-         <select  name="directs" size="3" value="<?= isset($_GET['red']) ? $product['directs'] : ''; ?>" class="box" required>
+         <select  name="directs" size="3" value="" class="box" required>
             <option value="" disabled selected>Выберите направление подготовки из списка</option>
             <option value="1">44.03.02 Психолого-педагогическое образование</option>
             <option value="2">37.03.01 Психология</option>
@@ -380,10 +350,10 @@
 
          </select>
          <span>Расскажите о проблеме</span>
-         <textarea  type="text" name="problem" size="3" value="<?= isset($_GET['red']) ? $product['problem'] : ''; ?>" cols="5" rows="5" style="border: solid 1px grey; width: 100%; border-radius: 34px;   text-indent: 1.5em; padding-top: 1em;  margin-top: 1rem;
+         <textarea  type="text" name="problem" size="3" value="" cols="5" rows="5" style="border: solid 1px grey; width: 100%; border-radius: 34px;   text-indent: 1.5em; padding-top: 1em;  margin-top: 1rem;
          margin-bottom: 2rem;" placeholder=""></textarea>
          <span>Выберите вуз</span>
-         <select type="text" name="university" size="3" value="<?= isset($_GET['red']) ? $product['university'] : ''; ?>" class="box" required>
+         <select type="text" name="university" size="3" value="" class="box" required>
             <option value="" disabled selected>Выберите вуз из списка</option>
             <option value="1">ВГСПУ – Волгоградский государственный социально-педагогический университет</option>
             <option value="2">ВолгГТУ – Волгоградский государственный технический университет</option>
